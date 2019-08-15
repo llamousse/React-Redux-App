@@ -1,0 +1,16 @@
+button:hover {
+    color: white;
+    background-color: maroon;
+    transition: background-color 0.5s ease; 
+}
+
+button {
+    border-style: none;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+}
