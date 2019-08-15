@@ -1,9 +1,10 @@
 import React from 'react';
-// add props
-const Gifs = () => {
+
+const Gifs = (props) => {
     return (
         <div>
-            <h1>Helloooo</h1>
+            <img src={props.gifs.embed_url} 
+                alt={props.gifs.id}/>
         </div>
     );
 };

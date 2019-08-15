@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Loader from 'react-loader-spinner';
+import Loader from "react-loader-spinner";
 
 import "./GifsList.css";
 
 import { getData } from '../actions';
 
-// import Gifs from './Gifs';
+import Gifs from './Gifs';
 
 const GifsList = (props) => {
     return (
@@ -18,6 +18,9 @@ const GifsList = (props) => {
                 height="30" width="30" /> :
                 'Search Away!' }
             </button>
+            {props.gifs && props.gifs.map(item => (
+                <Gifs key={item.id} gifs={item} /> 
+            ))}
         </>
     );
 };
