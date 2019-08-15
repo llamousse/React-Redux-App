@@ -16,7 +16,7 @@ const GifsList = (props) => {
                 {props.isLoading ?
                 <Loader type="TailSpin" color="grey"
                 height={30} width={30} /> :
-                'Search Away!' }
+                'Send GIFS' }
             </button>
             {props.gifs && props.gifs.map(item => (
                 <Gifs key={item.id} gifs={item} />
