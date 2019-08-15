@@ -15,11 +15,11 @@ const GifsList = (props) => {
             <button onClick={props.getData}>
                 {props.isLoading ?
                 <Loader type="TailSpin" color="#00BFFF"
-                height="30" width="30" /> :
+                height={30} width={30} /> :
                 'Search Away!' }
             </button>
             {props.gifs && props.gifs.map(item => (
-                <Gifs key={item.id} gifs={item} /> 
+                <Gifs key={item.id} gifs={item} />
             ))}
         </>
     );

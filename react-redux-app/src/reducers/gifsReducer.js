@@ -25,8 +25,12 @@ export const reducer = (state = initialState, action) => {
                 gifs: action.payload,
                 error: ''
             };
-        
-
+        case FETCH_DATA_FAIL:
+            return {
+                ...state,
+                isLoading: false,
+                error: 'Error: Could not retrieve data.'
+            };
         default:
             return state;
     }
