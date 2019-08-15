@@ -1,5 +1,10 @@
+.imgRender {
+    width: 33%;
+    display: inline-table;
+    padding: 5px;
+}
+
 img {
-    max-width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow:

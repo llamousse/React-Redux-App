@@ -6,9 +6,8 @@ export const FETCH_DATA_FAIL = "FETCH_DATA_FAIL";
 
 export const getData = () => {
     
-    const url = "https://api.giphy.com/v1/gifs/trending?api_key=iBGHTLVUpgpFhdZYDsY0DJTbO2OHB0eI&limit=3&rating=PG";
-    
-    const url2 = "https://api.giphy.com/v1/gifs/search?api_key=iBGHTLVUpgpFhdZYDsY0DJTbO2OHB0eI&q=alpaca&limit=9&offset=0&rating=PG&lang=en";
+    // const url = "https://api.giphy.com/v1/gifs/trending?api_key=iBGHTLVUpgpFhdZYDsY0DJTbO2OHB0eI&limit=3&rating=PG";
+    const url2 = "https://api.giphy.com/v1/gifs/search?api_key=iBGHTLVUpgpFhdZYDsY0DJTbO2OHB0eI&q=alpaca&limit=8&offset=0&rating=PG&lang=en";
 
     return (dispatch) => {
         dispatch({ type: FETCH_DATA_START });

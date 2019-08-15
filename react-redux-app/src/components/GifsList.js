@@ -14,7 +14,7 @@ const GifsList = (props) => {
             <h1>Gif Search</h1>
             <button onClick={props.getData}>
                 {props.isLoading ?
-                <Loader type="TailSpin" color="#00BFFF"
+                <Loader type="TailSpin" color="grey"
                 height={30} width={30} /> :
                 'Search Away!' }
             </button>
